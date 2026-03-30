@@ -2,6 +2,13 @@
 Description:
 This script performs data quality checks on the "silver" layer tables.
 
+Main objectives:
+1. Validate primary keys (no NULLs or duplicates).
+2. Detect unwanted spaces in string columns.
+3. Ensure data standardization (consistent values).
+4. Validate numeric fields (no NULLs or negative values where not allowed).
+5. Check date validity and logical consistency between dates.
+
 Expected outcome:
 All queries should return no results if data quality is clean.
 */
